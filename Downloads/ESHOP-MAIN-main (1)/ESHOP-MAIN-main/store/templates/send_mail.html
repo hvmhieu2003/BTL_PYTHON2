@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style type="text/css">
+    h1, h2 {
+        text-align: center;
+    }
+    .thank-you-img {
+        margin: 0;
+        max-width: 35%;
+        height: auto;
+        display: block; /* Đảm bảo ảnh hiển thị như một phần tử block */
+        margin: 0 auto; /* Để căn giữa ảnh */
+    }
+</style>
+<div class="alert alert-success" role="alert">
+    <h1>Thank you for your purchase!</h1>
+    <h2>Order information has been sent to your email. Please check again!</h2>
+</div>
+
+<img class="thank-you-img" src="https://marketplace.canva.com/EAFGH7TQKS8/3/0/1600w/canva-thank-you-card-uMCuw9XtkYc.jpg" alt="Thank You Image" />
+{% endblock %}
